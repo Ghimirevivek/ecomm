@@ -5,7 +5,7 @@ import { IoFastFood } from 'react-icons/io5';
 import Products from './Products';
 import { useStateValue } from '../context/StateProvider';
 
-const MenuContainer = () => {
+const FilterProducts = () => {
   const [filter, setFilter] = useState('laptops');
   const {
     state: { foodItems },
@@ -89,4 +89,4 @@ const MenuContainer = () => {
   );
 };
 
-export default MenuContainer;
+export default FilterProducts;

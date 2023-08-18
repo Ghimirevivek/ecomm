@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './Home';
-import MenuContainer from '../components/FilterProducts';
+import FilterProducts from '../components/FilterProducts';
 import { useStateValue } from '../context/StateProvider';
 import CartPage from './CartPage';
 
@@ -12,7 +12,7 @@ const MainContainer = () => {
   return (
     <div className='w-full h-auto flex flex-col items-center justify-center '>
       <Home />
-      <MenuContainer />
+      <FilterProducts />
       {cartShow && <CartPage />}
     </div>
   );
